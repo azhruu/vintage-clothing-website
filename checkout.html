@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secure Checkout | Maison Archive</title>
+    <meta name="description" content="Complete your Maison Archive checkout with contact, shipping, delivery, payment, and order review sections.">
+    <meta property="og:title" content="Secure Checkout | Maison Archive">
+    <meta property="og:description" content="Clean, secure demo checkout for curated vintage pieces.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="checkout">
+    <div id="site-header"></div>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <div class="container page-intro reveal">
+          <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Checkout</span></nav>
+          <h1>Secure Checkout</h1>
+          <p>A calm, focused checkout for the pieces you have selected. This static demo validates fields without processing payment.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container checkout-layout">
+          <form class="form-panel reveal" data-checkout-form novalidate>
+            <div class="progress" aria-label="Checkout steps">
+              <span class="active">Contact</span>
+              <span>Shipping</span>
+              <span>Delivery</span>
+              <span>Payment</span>
+              <span>Review</span>
+            </div>
+
+            <h2>Contact information</h2>
+            <div class="form-grid">
+              <label class="field full">
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" required>
+              </label>
+            </div>
+
+            <h2>Shipping information</h2>
+            <div class="form-grid">
+              <label class="field">
+                <span>First name</span>
+                <input type="text" name="firstName" autocomplete="given-name" required>
+              </label>
+              <label class="field">
+                <span>Last name</span>
+                <input type="text" name="lastName" autocomplete="family-name" required>
+              </label>
+              <label class="field full">
+                <span>Address</span>
+                <input type="text" name="address" autocomplete="street-address" required>
+              </label>
+              <label class="field">
+                <span>Apartment / suite</span>
+                <input type="text" name="apartment">
+              </label>
+              <label class="field">
+                <span>City</span>
+                <input type="text" name="city" autocomplete="address-level2" required>
+              </label>
+              <label class="field">
+                <span>Country</span>
+                <select name="country" required>
+                  <option value="">Select country</option>
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>United Kingdom</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>State / province</span>
+                <input type="text" name="state" autocomplete="address-level1" required>
+              </label>
+              <label class="field">
+                <span>Postal code</span>
+                <input type="text" name="postal" autocomplete="postal-code" required>
+              </label>
+              <label class="field">
+                <span>Phone</span>
+                <input type="tel" name="phone" autocomplete="tel" required>
+              </label>
+            </div>
+
+            <h2>Delivery method</h2>
+            <div class="form-grid">
+              <label class="field full">
+                <span>Shipping speed</span>
+                <select name="delivery" required>
+                  <option value="">Select delivery</option>
+                  <option>Standard tracked shipping</option>
+                  <option>Express tracked shipping</option>
+                </select>
+              </label>
+            </div>
+
+            <h2>Payment information</h2>
+            <div class="form-grid">
+              <label class="field full">
+                <span>Card number</span>
+                <input type="text" name="card" inputmode="numeric" placeholder="4242 4242 4242 4242" required>
+              </label>
+              <label class="field">
+                <span>Expiry</span>
+                <input type="text" name="expiry" placeholder="MM / YY" required>
+              </label>
+              <label class="field">
+                <span>CVC</span>
+                <input type="text" name="cvc" inputmode="numeric" required>
+              </label>
+            </div>
+
+            <button class="button full" type="submit">Place Order</button>
+            <p class="form-note">Demo checkout only. Use Stripe or another secure provider for production payment processing.</p>
+          </form>
+
+          <aside class="checkout-summary reveal" id="checkoutSummary" aria-live="polite"></aside>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <div id="quick-view-root"></div>
+    <div id="cart-drawer-root"></div>
+    <div id="toast-root" class="toast-root"></div>
+  </body>
+</html>

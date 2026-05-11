@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vintage Product | Maison Archive</title>
+    <meta name="description" content="View premium vintage product details, measurements, condition notes, gallery, wishlist, and add to cart at Maison Archive.">
+    <meta property="og:title" content="Vintage Product | Maison Archive">
+    <meta property="og:description" content="Detailed vintage product page with measurements, condition, curation notes, and related pieces.">
+    <meta property="og:type" content="product">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="product">
+    <div id="site-header"></div>
+
+    <main class="page-shell">
+      <section class="container product-detail" id="productDetail" aria-live="polite"></section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-kicker">Related products</p>
+              <h2>Complete the look.</h2>
+            </div>
+            <a class="link-arrow" href="shop.html">Back to shop</a>
+          </div>
+          <div class="product-grid" id="relatedProducts"></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <div id="quick-view-root"></div>
+    <div id="cart-drawer-root"></div>
+    <div id="toast-root" class="toast-root"></div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login or Register | Maison Archive</title>
+    <meta name="description" content="Login or register for Maison Archive with a premium split-screen vintage fashion account layout.">
+    <meta property="og:title" content="Login or Register | Maison Archive">
+    <meta property="og:description" content="Access your Maison Archive account.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="login">
+    <div id="site-header"></div>
+
+    <main class="auth-layout">
+      <section class="auth-image reveal">
+        <p class="eyebrow">Private archive access</p>
+        <h2>Save rare pieces before they disappear.</h2>
+      </section>
+
+      <section class="auth-form-wrap">
+        <div class="auth-panel reveal">
+          <div class="auth-tabs" role="tablist" aria-label="Account forms">
+            <button class="active" type="button" data-auth-tab="login">Login</button>
+            <button type="button" data-auth-tab="register">Register</button>
+          </div>
+
+          <form class="auth-form active" data-auth-form="login" data-login-form novalidate>
+            <h1>Welcome back</h1>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label class="field">
+              <span>Password</span>
+              <input type="password" name="password" autocomplete="current-password" required>
+            </label>
+            <a class="link-arrow" href="contact.html">Forgot password</a>
+            <button class="button full" type="submit">Login</button>
+          </form>
+
+          <form class="auth-form" data-auth-form="register" data-register-form novalidate>
+            <h1>Create account</h1>
+            <label class="field">
+              <span>Name</span>
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label class="field">
+              <span>Password</span>
+              <input type="password" name="password" autocomplete="new-password" required>
+            </label>
+            <label class="field">
+              <span>Confirm password</span>
+              <input type="password" name="confirmPassword" autocomplete="new-password" required>
+            </label>
+            <button class="button full" type="submit">Register</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div id="quick-view-root"></div>
+    <div id="cart-drawer-root"></div>
+    <div id="toast-root" class="toast-root"></div>
+  </body>
+</html>

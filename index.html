@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maison Archive | Premium Vintage Streetwear & Curated Fashion</title>
+    <meta name="description" content="Premium vintage streetwear, rare archive pieces, leather, denim, outerwear, and curated fashion for modern wardrobes.">
+    <meta property="og:title" content="Maison Archive | Premium Vintage Streetwear">
+    <meta property="og:description" content="Rare vintage. Modern attitude. Curated archive pieces for the modern wardrobe.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="home">
+    <div id="site-header"></div>
+
+    <main class="page-shell">
+      <section class="hero">
+        <div class="container hero-content reveal">
+          <p class="eyebrow">Curated vintage clothing</p>
+          <h1>Maison Archive</h1>
+          <p class="lead">Rare vintage. Modern attitude. Curated archive pieces, timeless streetwear, and one-of-one finds made for the modern wardrobe.</p>
+          <div class="hero-actions">
+            <a class="button" href="shop.html">Shop Collection</a>
+            <a class="button secondary" href="collections.html">Explore Lookbook</a>
+          </div>
+          <div class="hero-meta" aria-label="Brand values">
+            <span>One of one</span>
+            <span>Measured by hand</span>
+            <span>Sourced responsibly</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="home-intro-strip" aria-label="Maison Archive highlights">
+        <div class="marquee">
+          <span>Vintage denim</span><span>Leather archive</span><span>Rare streetwear</span><span>Measured garments</span><span>Sustainable fashion</span><span>Vintage denim</span><span>Leather archive</span><span>Rare streetwear</span><span>Measured garments</span><span>Sustainable fashion</span>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-kicker">Featured collections</p>
+              <h2>Edits with a point of view.</h2>
+            </div>
+            <p>Shop curated stories built around texture, era, silhouette, and the pieces that make vintage feel current.</p>
+          </div>
+          <div class="collection-grid" id="featuredCollections"></div>
+        </div>
+      </section>
+
+      <section class="section dark-band">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-kicker">Trending now</p>
+              <h2>Rare pieces moving fast.</h2>
+            </div>
+            <a class="link-arrow" href="shop.html">Shop all pieces</a>
+          </div>
+          <div class="product-grid" id="trendingProducts"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split-editorial">
+          <div class="editorial-image wide reveal">
+            <img src="https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&w=1400&q=82" alt="Editorial vintage leather and denim styling in moody light" loading="lazy">
+          </div>
+          <div class="editorial-copy reveal">
+            <p class="section-kicker">Best sellers</p>
+            <h2>The pieces people remember.</h2>
+            <p>Low-stock jackets, broken-in denim, and archival staples with enough character to carry a full look.</p>
+            <div class="metrics">
+              <div class="metric"><strong>42</strong><span>Weekly drops</span></div>
+              <div class="metric"><strong>1/1</strong><span>Rare finds</span></div>
+              <div class="metric"><strong>14d</strong><span>Returns</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="container section-tight">
+          <div class="product-grid" id="bestSellerProducts"></div>
+        </div>
+      </section>
+
+      <section class="section dark-band">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-kicker">New arrivals</p>
+              <h2>Fresh from the archive.</h2>
+            </div>
+            <a class="link-arrow" href="shop.html?filter=new">View all new arrivals</a>
+          </div>
+          <div class="product-grid" id="newArrivalProducts"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split-editorial">
+          <div class="editorial-copy reveal">
+            <p class="section-kicker">Brand story</p>
+            <h2>Clothing with memory.</h2>
+            <p>We source clothing with history, character, and cultural weight. Every piece is selected for its silhouette, texture, condition, and ability to feel relevant today.</p>
+            <p>Each garment is inspected, measured, styled, and described with the clarity vintage shoppers deserve.</p>
+            <a class="button ghost" href="about.html">Read Our Story</a>
+          </div>
+          <div class="editorial-image reveal">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1400&q=82" alt="Model in vintage editorial outfit with warm neutral background" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-kicker">Customer notes</p>
+              <h2>Trusted by collectors and stylists.</h2>
+            </div>
+          </div>
+          <div class="testimonial-grid" id="testimonials"></div>
+        </div>
+      </section>
+
+      <section class="section-tight">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-kicker">Social showcase</p>
+              <h2>Styled in the wild.</h2>
+            </div>
+          </div>
+          <div class="social-strip" id="socialShowcase"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="newsletter reveal">
+            <div>
+              <p class="section-kicker">Archive list</p>
+              <h2>Join the Archive List</h2>
+              <p>Get early access to rare drops, styling edits, and private vintage releases.</p>
+            </div>
+            <form class="newsletter-form" data-newsletter-form>
+              <input type="email" name="email" placeholder="Email address" aria-label="Email address" required>
+              <button class="button secondary" type="submit">Subscribe</button>
+              <div class="form-note" data-form-note></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <div id="quick-view-root"></div>
+    <div id="cart-drawer-root"></div>
+    <div id="toast-root" class="toast-root"></div>
+  </body>
+</html>

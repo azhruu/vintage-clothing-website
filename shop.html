@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop Vintage Clothing | Maison Archive</title>
+    <meta name="description" content="Shop curated vintage clothing, rare streetwear, denim, leather, outerwear, knitwear, and workwear at Maison Archive.">
+    <meta property="og:title" content="Shop Vintage Clothing | Maison Archive">
+    <meta property="og:description" content="Discover curated vintage essentials, rare streetwear, and timeless wardrobe pieces.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="shop">
+    <div id="site-header"></div>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <div class="container page-intro reveal">
+          <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Shop</span></nav>
+          <h1>Shop The Archive</h1>
+          <p>Discover curated vintage essentials, rare streetwear, and timeless wardrobe pieces with measurements, condition notes, and instant wishlist saves.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container shop-layout">
+          <aside class="filters-panel" id="filtersPanel" aria-label="Product filters"></aside>
+
+          <div>
+            <div class="shop-toolbar">
+              <div class="shop-search">
+                <label for="shopSearch">Search</label>
+                <input id="shopSearch" type="search" placeholder="Search by name, category, color, size, brand..." autocomplete="off">
+              </div>
+              <button class="button ghost filter-toggle" type="button" data-filter-toggle>Filters</button>
+              <div class="shop-sort">
+                <label class="sr-only" for="sortProducts">Sort products</label>
+                <select id="sortProducts" aria-label="Sort products">
+                  <option value="featured">Featured</option>
+                  <option value="newest">Newest</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="best">Best Selling</option>
+                  <option value="rated">Highest Rated</option>
+                  <option value="sale">Sale</option>
+                </select>
+              </div>
+              <div class="product-count" id="productCount">0 pieces</div>
+            </div>
+            <div class="active-filters" id="activeFilters" aria-label="Active filters"></div>
+            <div class="product-grid" id="shopProductGrid"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <div id="quick-view-root"></div>
+    <div id="cart-drawer-root"></div>
+    <div id="toast-root" class="toast-root"></div>
+  </body>
+</html>

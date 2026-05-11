@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Curated Vintage Collections | Maison Archive</title>
+    <meta name="description" content="Explore premium editorial vintage collections including denim, leather, rare streetwear, workwear, earth tone layers, and winter outerwear.">
+    <meta property="og:title" content="Curated Vintage Collections | Maison Archive">
+    <meta property="og:description" content="Premium editorial vintage collection cards and curated shopping edits.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="collections">
+    <div id="site-header"></div>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <div class="container page-intro reveal">
+          <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Collections</span></nav>
+          <h1>Curated Collections</h1>
+          <p>Editorial edits built around silhouette, material, era, and the feeling a great vintage piece brings into a modern wardrobe.</p>
+          <div class="hero-meta">
+            <span>6 active edits</span>
+            <span>101 archive pieces</span>
+            <span>Weekly refresh</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container collection-feature">
+          <div class="collection-feature-media reveal">
+            <img src="https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&w=1500&q=82" alt="Editorial vintage leather jacket styling against warm brick" loading="lazy">
+            <div class="feature-stamp">
+              <span>Editor pick</span>
+              <strong>Leather Archive</strong>
+            </div>
+          </div>
+          <div class="collection-feature-copy reveal">
+            <p class="section-kicker">This month's edit</p>
+            <h2>Leather, denim, and the quiet confidence of worn-in luxury.</h2>
+            <p>The current collection leans into structured jackets, softened denim, and earth-tone layers that look better with history. Each edit is built like a small wardrobe, not a category page.</p>
+            <div class="collection-stat-row" aria-label="Collection highlights">
+              <div><strong>11</strong><span>Leather pieces</span></div>
+              <div><strong>24</strong><span>Streetwear finds</span></div>
+              <div><strong>90s</strong><span>Key era</span></div>
+            </div>
+            <div class="collection-mood-nav" aria-label="Shop collection moods">
+              <a href="shop.html?collection=Leather%20Archive">Leather</a>
+              <a href="shop.html?collection=The%20Denim%20Edit">Denim</a>
+              <a href="shop.html?collection=Rare%20Streetwear">Streetwear</a>
+              <a href="shop.html?collection=Workwear%20Classics">Workwear</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-kicker">Lookbook edits</p>
+              <h2>Shop by mood, not by algorithm.</h2>
+            </div>
+            <p>Each collection is composed around styling intent, condition, texture, and the pieces that naturally live together.</p>
+          </div>
+          <div class="collection-grid collections-showcase" id="collectionsGrid"></div>
+        </div>
+      </section>
+
+      <section class="section dark-band">
+        <div class="container collection-journal">
+          <div class="editorial-copy reveal">
+            <p class="section-kicker">Curator notes</p>
+            <h2>How we build an edit.</h2>
+            <p>Collections are assembled by mood first: fabric weight, proportion, palette, age, and the kind of outfit tension that makes vintage feel alive.</p>
+          </div>
+          <div class="journal-grid">
+            <article class="journal-card reveal">
+              <span>01</span>
+              <h3>Start with texture</h3>
+              <p>Leather grain, denim fades, wool weight, and cotton softness decide the first pass.</p>
+            </article>
+            <article class="journal-card reveal">
+              <span>02</span>
+              <h3>Build the silhouette</h3>
+              <p>Oversized outerwear, straight denim, cropped jackets, and relaxed shirting shape each edit.</p>
+            </article>
+            <article class="journal-card reveal">
+              <span>03</span>
+              <h3>Keep only the rare</h3>
+              <p>Condition, wear pattern, measurements, and styling potential determine what enters the archive.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tight">
+        <div class="container archive-index reveal">
+          <p class="section-kicker">Archive index</p>
+          <h2>Find your lane.</h2>
+          <div class="index-list">
+            <a href="shop.html?collection=The%20Denim%20Edit"><span>Washed blues and black fades</span><strong>The Denim Edit</strong></a>
+            <a href="shop.html?collection=Leather%20Archive"><span>Aged bombers and structured jackets</span><strong>Leather Archive</strong></a>
+            <a href="shop.html?collection=Earth%20Tone%20Layers"><span>Cream, olive, taupe, and soft wool</span><strong>Earth Tone Layers</strong></a>
+            <a href="shop.html?collection=Weekend%20Essentials"><span>Flannels, knits, tees, and easy layers</span><strong>Weekend Essentials</strong></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <div id="quick-view-root"></div>
+    <div id="cart-drawer-root"></div>
+    <div id="toast-root" class="toast-root"></div>
+  </body>
+</html>

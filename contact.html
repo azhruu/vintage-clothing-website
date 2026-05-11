@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Maison Archive | Vintage Fashion Support</title>
+    <meta name="description" content="Contact Maison Archive for product questions, measurements, shipping, returns, styling, and support.">
+    <meta property="og:title" content="Contact Maison Archive">
+    <meta property="og:description" content="Questions about a rare piece, fit, shipping, or styling? Reach the Maison Archive studio.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="contact">
+    <div id="site-header"></div>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <div class="container page-intro reveal">
+          <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></nav>
+          <h1>Talk to the studio.</h1>
+          <p>Ask about measurements, condition, shipping, returns, styling, or the piece you cannot stop thinking about.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <form class="form-panel reveal" data-contact-form novalidate>
+            <h2>Send a note</h2>
+            <div class="form-grid">
+              <label class="field">
+                <span>Name</span>
+                <input type="text" name="name" required>
+              </label>
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" required>
+              </label>
+              <label class="field full">
+                <span>Subject</span>
+                <input type="text" name="subject" required>
+              </label>
+              <label class="field full">
+                <span>Message</span>
+                <textarea name="message" required></textarea>
+              </label>
+            </div>
+            <button class="button" type="submit">Send Message</button>
+            <p class="form-note" data-contact-note></p>
+          </form>
+
+          <aside class="contact-panel reveal">
+            <p class="section-kicker">Customer care</p>
+            <h2>We reply within one business day.</h2>
+            <p>Maison Archive is an online vintage studio based in New York, shipping curated pieces across the United States.</p>
+            <div class="contact-list">
+              <a href="mailto:studio@maisonarchive.example">studio@maisonarchive.example</a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram / @maisonarchive</a>
+              <span>Support hours: Monday to Friday, 10am to 6pm EST</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-tight">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-kicker">FAQ preview</p>
+              <h2>Quick answers before you write.</h2>
+            </div>
+          </div>
+          <div class="testimonial-grid">
+            <article class="testimonial reveal">
+              <p class="eyebrow">Sizing</p>
+              <blockquote>Use garment measurements first. Vintage labels often differ from modern sizing.</blockquote>
+              <cite>Fit support</cite>
+            </article>
+            <article class="testimonial reveal">
+              <p class="eyebrow">Shipping</p>
+              <blockquote>Most orders ship within 1 to 3 business days with tracking and warm protective packing.</blockquote>
+              <cite>Tracked delivery</cite>
+            </article>
+            <article class="testimonial reveal">
+              <p class="eyebrow">Returns</p>
+              <blockquote>Returns are accepted within 14 days when the item is in its original shipped condition.</blockquote>
+              <cite>Clear care</cite>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <div id="quick-view-root"></div>
+    <div id="cart-drawer-root"></div>
+    <div id="toast-root" class="toast-root"></div>
+  </body>
+</html>

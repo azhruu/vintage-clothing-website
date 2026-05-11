@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Cart | Maison Archive</title>
+    <meta name="description" content="Review your Maison Archive cart, update quantities, apply a discount code, and continue to checkout.">
+    <meta property="og:title" content="Your Cart | Maison Archive">
+    <meta property="og:description" content="Your selected vintage archive pieces.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+  </head>
+  <body data-page="cart">
+    <div id="site-header"></div>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <div class="container page-intro reveal">
+          <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Cart</span></nav>
+          <h1>Your Archive</h1>
+          <p>Review your selected pieces, adjust quantities, apply a code, and move into a clean checkout flow.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container" id="cartPage" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <div id="quick-view-root"></div>
+    <div id="cart-drawer-root"></div>
+    <div id="toast-root" class="toast-root"></div>
+  </body>
+</html>
